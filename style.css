@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Vazirmatn";
+  transition: 0.5s;
+}
+
+:root {
+  --color-num1: #100f0f;
+  --color-num2: #0f3d3e;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(35deg, var(--color-num1), var(--color-num2));
+}
+
+.time-container {
+  position: relative;
+  display: grid;
+  grid-template-rows: 250px;
+  grid-template-columns: 1fr;
+  width: 600px;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #e2dcc83a;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.min-ho-container {
+  display: grid;
+  grid-template-columns: 130px 30px 130px;
+  grid-template-rows: 150px;
+  width: 400px;
+  grid-row: 20px;
+  color: white;
+  font-size: 120px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.second {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  right: 110px;
+  bottom: 40px;
+  color: var(--color-num2);
+}
+
+.pm {
+  position: absolute;
+  height: 25px;
+  width: 50px;
+  right: 110px;
+  bottom: 155px;
+  text-align: center;
+  color: var(--color-num2);
+}
+
+.date {
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  background-color: rgba(44, 34, 34, 0.176);
+  color: white;
+  text-align: center;
+  line-height: 45px;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  justify-self: center;
+}
+
+.hour {
+  background: linear-gradient(35deg, var(--color-num1), var(--color-num2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.minute {
+  background: linear-gradient(35deg, var(--color-num2), var(--color-num1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.middle {
+  color: var(--color-num2);
+}
+
+.change-theme {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 50px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--color-num2);
+  color: var(--color-num1);
+  cursor: pointer;
+}
+
+.change-theme:hover {
+  transform: translate(-50%) translateY(-2px);
+}
